@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiles.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <main class="main">
+        <picture>
+            <div class="main__imagen"></div> <!-- 👈 no <img>, usa <div> -->
+        </picture>
+
+        <form class="main__input">
+            <input placeholder="Usuario" id="usuario">
+            <input placeholder="Contraseña" id="contraseña">
+            <button type="button" id="abrir__ojos" class="botton"></button>
+            <a href="informacion.html">
+            <button type="button" id="sistema" class="botton" style="display: none;">Entrar al sistema</button>
+            </a>
+            <audio id="sonido" src="audio.mp3" hidden></audio>
+
+        </form>
+
+
+        <picture>
+            <div class="main__imagen"></div> <!-- 👈 segunda cara -->
+        </picture>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
