@@ -5,8 +5,7 @@
   
   
   .main {
-    display: flex;
-    
+    display: flex;  
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -150,5 +149,52 @@
     height: 40px;
   }
   
+/* Celulares */
+@media (max-width: 480px) {
+
+  .main {
+    flex-direction: column;
+    height: auto;
+    gap: 25px;
+    padding: 25px 0;
+  }
+
+  .main__imagen {
+    width: 200px;
+    height: 210px;
+    background-size: 200px 392px; /* tamaño total del sprite reducido */
+    margin: 0 auto;
+  }
+
+  /* 👇 Ajusta la posición para que se vea completa la cara con ojos abiertos */
+  .main__imagen.abiertos {
+    background-position: 0 -200px;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .main {
+    flex-direction: column;   /* También columna en tablets */
+    height: auto;
+    gap: 30px;
+  }
+
+  .main__imagen {
+    width: 250px;
+    height: 260px;
+    background-size: 250px 490px;
+    margin: 0 auto;
+  }
+
+  .main__input {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+
 
   
