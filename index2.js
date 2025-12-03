@@ -49,7 +49,7 @@ buscar.addEventListener("click", () => {
   if (encontrados.length > 0) {
     // Mostrar todos los resultados
     resultado.innerHTML = encontrados.map(r => `
-      <div style="border:1px solid #ccc; padding:8px; margin:6px 0; border-radius:6px;">
+      <div style="border:1px solid #ccc; padding:8px; margin:6px 0; border-radius:6px; color:white;">
         <p><strong>Nombre:</strong> ${r.nombre}</p>
         <p><strong>Datos:</strong> ${r.datos}</p>
       </div>
